@@ -1,9 +1,9 @@
 const byteSize = (str) => {
   // write your code here
-	return new TextEncounter().encode(str).length;
+	return new Blob([str]).size;
 	
 };
 
 // Do not change the code below
-const str = prompt("Enter some string.");
+const str = promp("Enter some string.");
 alert(byteSize(str));
